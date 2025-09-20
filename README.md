@@ -4,13 +4,20 @@ A simple desktop application for creating and studying flashcards with local dat
 
 ---
 
-## ✨ Features
+Features
+* **Deck Management: Create new decks or load existing ones from the main menu.
 
-* **Deck Management**: Create, load, and manage multiple flashcard decks.
-* **Card Creation**: Easily add new cards with a front and back to any selected deck.
-* **Study Mode**: Review cards in a full-screen study session.
-* **Local Persistence**: All decks and cards are automatically saved as JSON files in a local `data` directory.
-* **Dynamic UI**: The user interface dynamically updates to show all available decks, making it easy to switch between subjects.
+* **Card Creation: Easily add new flashcards to any deck with a dedicated card creation page.
+
+* **Local Persistence: All decks and cards are automatically saved as local JSON files, so your data is always safe.
+
+* **Comprehensive Error Handling: The app includes robust error-handling blocks to prevent crashes from corrupted files or permission issues, providing clear, user-friendly pop-up messages instead.
+
+* **Dynamic Study Mode: Study cards in a randomized order. The app tracks your progress, showing you how many cards you've completed.
+
+* **Automated Score Tracking: Your score is automatically tracked based on your study habits. Flipping a card to see the answer counts as an incorrect guess, while passing to the next card without flipping counts as a correct one.
+
+* **Simple UI: A clean and intuitive user interface designed for a focused study experience..
 
 ---
 
