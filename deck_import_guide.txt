@@ -1,0 +1,26 @@
+Flashcard Deck Import Guide
+You can create and import your own decks from a plain text file. This is useful for migrating decks from other apps or for quickly creating multiple cards at once.
+
+File Format
+The app expects a simple, structured format for the text file. Each card must follow this template:
+
+The question starts with "Q: " followed by the question text.
+
+The answer starts with "A: " followed by the answer text.
+
+An optional hint can follow on the next line, starting with "H: " followed by the hint text.
+
+Each card should be separated by a blank line.
+
+Note: The file must be saved as a plain text file with a .txt extension. The deck name will be the same as the file name.
+
+Example
+Q: What is the capital of France?
+A: Paris
+H: It is a city known for the Eiffel Tower.
+
+Q: Who painted the Mona Lisa?
+A: Leonardo da Vinci
+
+Q: What is the boiling point of water in Celsius?
+A: 100°C

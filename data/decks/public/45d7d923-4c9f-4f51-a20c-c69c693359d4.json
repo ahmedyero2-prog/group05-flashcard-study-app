@@ -1,0 +1,15 @@
+{
+"name": "Physics",
+"deck_id": "45d7d923-4c9f-4f51-a20c-c69c693359d4",
+"cards": [
+{
+"front": "Who was albert Einstein",
+"back": "one of the worlds greatest physicist",
+"hint": ""
+}
+],
+"progress": {
+"correct": 0,
+"total": 1
+}
+}
