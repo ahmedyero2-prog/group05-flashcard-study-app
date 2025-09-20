@@ -86,4 +86,4 @@ At least two tests are located in /tests/test_flashcard.py.
 
 ✒️ Credits
 - Project Lead: Dalekeee
-- Collaboration: ahmedyero2-prog
+- Collaboration: ahmedyero2-prog, SteeveReeds
