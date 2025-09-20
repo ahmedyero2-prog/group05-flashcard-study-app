@@ -80,7 +80,7 @@ class FlashcardApp:
         self.tries_left = self.quiz_tries
         self.quiz_strictness = 80
         
-        # Set a solid background color instead of an image
+        # Set a solid background color 
         self.background_label = tk.Label(self.root, bg=BACKGROUND_COLOR)
         self.background_label.place(x=0, y=0, relwidth=1, relheight=1)
         
@@ -691,4 +691,4 @@ if __name__ == "__main__":
         root.mainloop()
     except Exception as e:
         print(f"An error occurred: {e}")
-        sys.exit(1)
+        sys.exit(1)     
