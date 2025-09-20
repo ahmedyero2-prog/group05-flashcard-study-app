@@ -9,7 +9,13 @@ pytest = "*"
 pysimplegui = "*"
 
 [dev-packages]
+name = "pypi"
 pytest = "*"
 
+
 [requires]
-python_version = "3.13"
+python_version = "3.11"
+
+
+
+
