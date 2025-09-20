@@ -1,50 +1,71 @@
 import json
 import os
+import hashlib
+from typing import Dict, Any
 
-# Define the file path for user accounts
-USER_DATA_FILE = "C:/Users/okafo/Documents/Python class/Python advanced/group05-flashcard-study-app/data/users.json"
+from exceptions import AuthenticationError
 
-def ensure_user_storage():
-    """Ensures the data directory and user file exist."""
-    os.makedirs(os.path.dirname(USER_DATA_FILE), exist_ok=True)
-    if not os.path.exists(USER_DATA_FILE):
-        with open(USER_DATA_FILE, 'w') as f:
-            json.dump({}, f)
+# Paths for data storage
 
-def load_users():
-    """Loads user accounts from a JSON file."""
-    ensure_user_storage()
-    with open(USER_DATA_FILE, 'r') as f:
+from pathlib import Path
+
+# Pathlib version (cleaner & recommended)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = PROJECT_ROOT / "data"
+USERS_FILE = os.path.join(DATA_DIR, "users.json")
+
+def _ensure_dir_exists(path):
+    """Helper function to create a directory if it doesn't exist."""
+    if not os.path.exists(path):
+        os.makedirs(path)
+
+def _hash_password(password: str) -> str:
+    """Hashes a password using SHA-256 for secure storage."""
+    return hashlib.sha256(password.encode()).hexdigest()
+
+def load_users() -> Dict[str, Any]:
+    """Loads user data from the users file."""
+    _ensure_dir_exists(DATA_DIR)
+    if not os.path.exists(USERS_FILE):
+        return {}
+    
+    with open(USERS_FILE, "r") as f:
         return json.load(f)
 
-def save_users(users):
-    """Saves user accounts to a JSON file."""
-    with open(USER_DATA_FILE, 'w') as f:
+def save_users(users: Dict[str, Any]):
+    """Saves user data to the users file."""
+    _ensure_dir_exists(DATA_DIR)
+    with open(USERS_FILE, "w") as f:
         json.dump(users, f, indent=4)
 
-def login_user(users, username, password):
-    """Authenticates a user based on username and password."""
-    user = users.get(username)
-    if user and user.get("password") == password:
-        # Reset session scores on login
-        user['session_scores'] = {}
-        print("Login successful.")
-        return user
-    return None
-
-def register_user(users, username, password):
-    """Registers a new user account."""
+def register_user(users: Dict[str, Any], username: str, password: str, hint: str) -> Dict[str, str]:
+    """Registers a new user, saving their details."""
+    if not username or not password or not hint:
+        raise AuthenticationError("Username, password, and hint cannot be empty.")
     if username in users:
-        print("Username already exists.")
-        return None
-    
-    # Initialize a new user profile with empty data
-    new_user = {
-        "username": username,
-        "password": password,
-        "decks": {}
+        raise AuthenticationError("Username already exists.")
+
+    hashed_password = _hash_password(password)
+    users[username] = {
+        "password": hashed_password,
+        "hint": hint
     }
-    users[username] = new_user
     save_users(users)
-    print("Registration successful.")
-    return new_user
+    return {"username": username}
+
+def login_user(users: Dict[str, Any], username: str, password: str) -> Dict[str, str]:
+    """Authenticates a user and returns their data."""
+    if username not in users:
+        raise AuthenticationError("User not found.")
+    
+    hashed_password = _hash_password(password)
+    if users[username]["password"] != hashed_password:
+        raise AuthenticationError("Incorrect password.")
+
+    return {"username": username}
+
+def get_password_hint(users: Dict[str, Any], username: str) -> str:
+    """Retrieves the password hint for a given user."""
+    if username not in users:
+        return "User not found."
+    return users[username].get("hint", "No hint available.")

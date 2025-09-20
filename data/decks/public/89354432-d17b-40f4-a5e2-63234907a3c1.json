@@ -1,0 +1,15 @@
+{
+"name": "Animals",
+"deck_id": "89354432-d17b-40f4-a5e2-63234907a3c1",
+"cards": [
+{
+"front": "What is the largest animal on land?",
+"back": "Elephant",
+"hint": ""
+}
+],
+"progress": {
+"correct": 0,
+"total": 1
+}
+}

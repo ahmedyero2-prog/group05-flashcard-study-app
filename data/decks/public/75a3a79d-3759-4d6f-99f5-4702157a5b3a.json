@@ -1,0 +1,25 @@
+{
+"name": "Science",
+"deck_id": "75a3a79d-3759-4d6f-99f5-4702157a5b3a",
+"cards": [
+{
+"front": "How old is Ahmad",
+"back": "1000",
+"hint": ""
+},
+{
+"front": "What is the capital of France?",
+"back": "Paris",
+"hint": ""
+},
+{
+"front": "What is H2O?",
+"back": "Water",
+"hint": ""
+}
+],
+"progress": {
+"correct": 0,
+"total": 0
+}
+}

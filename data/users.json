@@ -1,22 +1,12 @@
 {
-    "Reeds": {
-        "username": "Reeds",
-        "password": "randy",
-        "decks": {}
+    
+
+    "randy": {
+        "password": "6aac1e2f1838b854ba9d1abf94f018fdf70cf4aedfb8e46f513f49854df3be4e",
+        "hint": "none"
     },
-    "Reeds ": {
-        "username": "Reeds ",
-        "password": "Randy",
-        "decks": {}
-    },
-    "reeds": {
-        "username": "reeds",
-        "password": "RAndy",
-        "decks": {}
-    },
-    "ronald": {
-        "username": "ronald",
-        "password": "Randy",
-        "decks": {}
+    "Ronald": {
+        "password": "7a400d683b1e496c48d10d3d8e388699233e49c9a91ad15c10e85937006bfa2b",
+        "hint": "none"
     }
 }
