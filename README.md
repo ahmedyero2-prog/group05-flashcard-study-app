@@ -1,6 +1,6 @@
 # Flashcard Study App
 
-A simple desktop application for creating and studying flashcards with local data persistence. This app is designed to help users learn and retain information through personalized flashcard decks.
+This is a simple, yet robust, desktop application for creating, managing, and studying flashcards. Built with Python and Tkinter, it is designed to help you study more effectively by providing a clean user interface and essential features for spaced repetition.
 
 ---
 
