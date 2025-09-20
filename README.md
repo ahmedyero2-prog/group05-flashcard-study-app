@@ -114,5 +114,5 @@ Feel free to fork the repository and contribute to this project. All suggestions
 ## ✒️ Credits
 
 * **Project Lead**: [Your GitHub Username]
-* **Collaboration**: [Your Partner's GitHub Username]
+* **Collaboration**: ahmedyero2-prog,
 * **Special Thanks**: To the community for the guidance and resources that made this project possible.
