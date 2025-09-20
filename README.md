@@ -23,7 +23,7 @@ Features
 
 ## 💻 Technologies Used
 
-* **Python 3.x**
+* **Python 3.11
 * **Tkinter**: The standard Python library for building graphical user interfaces.
 
 ---
