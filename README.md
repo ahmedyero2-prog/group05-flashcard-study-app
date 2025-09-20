@@ -54,7 +54,7 @@ Dependency Management: The application will automatically check for and install 
 Simple UI: A clean and intuitive user interface designed for a focused study experience.
 
 Technologies Used
-Python 3.x
+Python 3.11
 
 Tkinter: The standard Python library for building graphical user interfaces.
 
@@ -66,7 +66,7 @@ Getting Started
 Follow these steps to get the application up and running on your local machine.
 
 Prerequisites
-Python 3.7 or higher
+Python 3.11 or higher
 
 Git
 
@@ -138,6 +138,6 @@ The application allows you to create or edit decks externally using a simple tex
 You can also access this guide from within the app by navigating to the Help > Deck Import Guide menu.
 
 Credits
-Project Lead: 
+Project Lead: Dalekee
 Collaboration: ahmedyero2-prog, Stevereeds
 
