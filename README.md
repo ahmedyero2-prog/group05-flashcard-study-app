@@ -132,6 +132,9 @@ The project follows a clean and logical file structure.
 ├── venv/                       # The Python virtual environment
 └── README.md
 
+DEMO LINK 
+https://drive.google.com/file/d/1n6Dc2xPpCRNAQLZetbwGxdkFxQSU3Xl9/view?usp=drivesdk
+
 Deck Import Guide
 The application allows you to create or edit decks externally using a simple text format. A detailed guide with an example of the required file structure can be found in the deck_import_guide.txt file in the project's root directory.
 
