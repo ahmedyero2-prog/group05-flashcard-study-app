@@ -1,0 +1,30 @@
+{
+"name": "quantum physics",
+"deck_id": "b3f07a1b-e555-442a-9293-86c8f93655b3",
+"cards": [
+{
+"front": "Who is albert einstien",
+"back": "The greatest physicist in the world",
+"hint": ""
+},
+{
+"front": "What is the theory of relativity",
+"back": "you're as good as you compare",
+"hint": ""
+},
+{
+"front": "Heisenberg's uncertainty principle states that",
+"back": "nothing really exists until it is measured",
+"hint": ""
+},
+{
+"front": "A stitch in time save",
+"back": "You cannot stitch time",
+"hint": ""
+}
+],
+"progress": {
+"correct": 4,
+"total": 12
+}
+}
