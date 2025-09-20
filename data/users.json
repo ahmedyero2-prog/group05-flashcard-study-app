@@ -1,0 +1,22 @@
+{
+    "Reeds": {
+        "username": "Reeds",
+        "password": "randy",
+        "decks": {}
+    },
+    "Reeds ": {
+        "username": "Reeds ",
+        "password": "Randy",
+        "decks": {}
+    },
+    "reeds": {
+        "username": "reeds",
+        "password": "RAndy",
+        "decks": {}
+    },
+    "ronald": {
+        "username": "ronald",
+        "password": "Randy",
+        "decks": {}
+    }
+}
